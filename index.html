@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/video-js.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/video.min.js"></script>
+    <title>Video.JS</title>    
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Reproductor de Video</h1>
+    </header>
+    <main>
+        <div class="contenedor" >
+            <video controls id="fm-video" class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}">
+                <source src="Media/Video.mp4" type="video/mp4">
+            </video>
+
+            <article>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, minus nam molestias neque minima fugiat odio. Quos eveniet illum, nihil veniam rerum optio minima alias, odit laborum perferendis minus nisi.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et itaque officiis tempora sint, expedita harum. Hic recusandae nisi ea ab quos eos commodi, odit adipisci enim, fugit dignissimos pariatur praesentium!</p>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        var reproductor = videojs('fm-video', {
+            fluid: true
+
+        });
+    </script>
+</body>
+</html>
